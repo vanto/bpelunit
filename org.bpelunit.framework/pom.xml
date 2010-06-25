@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.bpelunit.framework</groupId>
+  <groupId>org.bpelunit</groupId>
   <artifactId>org.bpelunit.framework</artifactId>
   <version>1.4.1-SNAPSHOT</version>
   <packaging>bundle</packaging>
@@ -51,7 +51,7 @@
 	                <Export-Package>org.bpelunit.framework.*;version=${pom.version};-split-package:=merge-first</Export-Package>
 					<Embed-Dependency>*;inline=**.xsd|schemaorg_apache_xmlbeans/**|**.xml</Embed-Dependency>
                     <DynamicImport-Package>*</DynamicImport-Package>
-					<Include-Resource>src/main/resources</Include-Resource>
+					<Include-Resource>{maven-resources}</Include-Resource>
 				</instructions>
   			</configuration>
   		</plugin>
